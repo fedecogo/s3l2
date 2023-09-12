@@ -163,21 +163,22 @@
         */
 
       const paintItGreen = function () {
-        const coloreVerde = document.getElementsByTagName("ul");
+        const coloreVerde = document.querySelectorAll("#secondList");
         coloreVerde.forEach((verde) => {
-          coloreVerde.style.backg;
+          verde.style.backgroundColor = "green";
         });
       };
+      paintItGreen();
 
       /* ESERCIZIO 9
          Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
         */
 
-      // const makeItClickable = function () {
-      //   const title = document.getElementsByTagName("h1");
-      //   title.innerText = title.innerText.slice(0, -1);
-      // };
-      // makeItClickable();
+      const makeItClickable = function () {
+        const title = document.getElementsByTagName("h1");
+        title.innerText = title.innerText.slice(0, -1);
+      };
+      makeItClickable();
 
       /* ESERCIZIO 10
          Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
